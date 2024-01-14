@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mm-form-container {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.mm-form-container::before {
+    content: ""; /* Empty content for pseudo-element */
+    display: block;
+    height: 40px; /* Adjust the height as needed */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.mm-login-form, .mm-register-form {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.mm-error-message {
+    color: #e74c3c;
+    margin-bottom: 16px;
+}
+
+.mm-toggle-form {
+    margin-top: 10px;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.mm-additional-text {
+    font-size: 20px;
+    color: #3498db;
+    margin-top: 20px;
+}
